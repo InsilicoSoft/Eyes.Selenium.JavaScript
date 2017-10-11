@@ -11,7 +11,7 @@ test.before(() => {
     driver = new WebDriverBuilder()
         .forBrowser('chrome')
         .setChromeOptions(options)
-        .usingServer('http://localhost:4444/wd/hub')
+        .usingServer('http://localhost:4445/wd/hub')
         .build();
 
     eyes = new Eyes();

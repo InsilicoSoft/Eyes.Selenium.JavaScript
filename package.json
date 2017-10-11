@@ -23,6 +23,8 @@
         "type": "git",
         "url": "git://github.com/applitools/Eyes.Selenium.JavaScript.git"
     },
+
+
     "license": "Apache-2.0",
     "main": "index",
     "dependencies": {

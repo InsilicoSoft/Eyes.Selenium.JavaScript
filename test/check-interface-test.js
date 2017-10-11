@@ -8,7 +8,7 @@ let driver = null, eyes = null;
 test.before(() => {
     driver = new WebDriverBuilder()
         .forBrowser('chrome')
-        .usingServer('http://localhost:4444/wd/hub')
+        .usingServer('http://localhost:4445/wd/hub')
         .build();
 
     eyes = new Eyes();
