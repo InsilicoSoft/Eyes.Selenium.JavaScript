@@ -30,6 +30,7 @@ describe("Eyes.Selenium.JavaScript - scaling methods", function() {
         eyes.checkElementBy(by.id("overflowing-div-image"), null, "Minions");
 
         eyes.close().then(function () {
+            browser.close();
             done();
         });
     });

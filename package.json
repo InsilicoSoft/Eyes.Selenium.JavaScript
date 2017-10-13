@@ -23,8 +23,6 @@
         "type": "git",
         "url": "git://github.com/applitools/Eyes.Selenium.JavaScript.git"
     },
-
-
     "license": "Apache-2.0",
     "main": "index",
     "dependencies": {
@@ -32,6 +30,7 @@
         "eyes.sdk": "0.0.65",
         "q": "^1.4.1"
     },
+
     "devDependencies": {
         "selenium-webdriver": "^3.0.0",
         "protractor": "^5.1.2",
@@ -43,10 +42,12 @@
         "test-protractor-default": "protractor protractor.conf.js --suite=simple,checkInterface",
         "test-protractor-scaling": "protractor protractor.conf.js --suite=scalingMethods --capabilities.chromeOptions.args='--force-device-scale-factor=1.25'"
     },
+    "//" : "use parameter below for applitools concurency param",
     "ava": {
         "concurrency": 1
     },
     "engines": {
         "node": ">=6.9.0"
-    }
+    },
+    "idleTimeout": 90
 }

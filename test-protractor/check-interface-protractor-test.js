@@ -61,6 +61,7 @@ describe("Eyes.Selenium.JavaScript - check-interface", function() {
         eyes.check("Entire region in frame by frame name and region locator", Target.region(by.id("inner-frame-div"), "frame1").fully());
 
         eyes.close().then(function () {
+            browser.close();
             done();
         });
     });

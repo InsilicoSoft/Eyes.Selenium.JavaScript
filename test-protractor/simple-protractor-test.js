@@ -35,6 +35,7 @@ describe("Eyes.Selenium.JavaScript - simple", function() {
         eyes.checkWindow("Entire window with cut borders");
 
         eyes.close().then(function () {
+            browser.close();
             done();
         });
     });
